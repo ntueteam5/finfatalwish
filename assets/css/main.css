@@ -1,0 +1,1249 @@
+html{
+  background-color: black;
+  font-size: 12pt;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+}
+
+header{
+  height:55px;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 3px 5px #000;
+}
+.navbar{
+  margin-left: 3%;
+}
+
+.LOGO_img{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
+  margin-top:3px;
+  width:10px;
+}
+
+.menu{
+  float: right;
+  margin-right:20px;
+}
+
+.menu ul{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu_item{
+  margin:0 5px;
+}
+
+.menu_item a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 1rem;
+}
+
+.menu_item:hover{
+  border-bottom: 2px solid #fff;
+}
+
+.navbar_bg{
+  background-color: #000;
+}
+
+.nav-item{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+}
+
+/*----------------------------------------------------*/
+
+/*home首頁*/
+#home{
+  width: 100%;
+  height: 30vw;
+  /* background-color: #000; */
+  background-image: url("../images/home5.png") ;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 5vw;
+  background-position-x: 45%;
+  box-shadow: 0 3px 5px #000;
+  background-color: rgb(20, 20, 20);
+}
+.home_words{ 
+  position: relative;
+  width: 472px;
+  height: 290px;
+  left: calc(30% - 400px);
+  top: 300px;
+}
+
+
+/*story前導*/
+#about{
+  width: 100%;
+  height:auto;
+  background-color: #000;
+}
+#about0{
+  width: 100%;
+  height:200px;
+  margin-top: -100px;
+  background-color: #000;
+}
+
+.about_content{
+  margin: 0 calc(50% - 480px);
+}
+
+.about_left{
+  display: inline-block;
+}
+
+.about_left .info{
+  color: #000;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top:10px;
+  text-align: center;
+}
+
+.about_right{
+  color: #000;
+  display: inline-block;
+  margin-left: 45px;
+  width: 685px;
+}
+.story{
+  background-image: url(../img/story.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 70%;
+  padding: 50px 10%;
+  background-position: center center;
+  margin: 10px 240px;
+}
+
+.p_story{
+  color: #fff;
+  text-align: center;
+}
+.p_story_header{
+  width: 100%;
+  color: #f10101;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  font-size: 26px;
+}
+.pre_story{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:center;
+}
+.story_info{
+  background-image: url(../img/story.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 70%;
+  padding: 50px 0;
+  background-position: center center;
+  margin: 10px 240px;
+}
+.infobox{
+  display: inline;
+  float: left;
+  width: 43%;
+  height: 280px;
+  padding: 3%;
+}
+#about_info{
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+}
+#about_info_map{
+  width: 100%;
+  height: 910px;
+  background-color: #000;
+}    
+.story_chara{
+  padding: 50px 0;
+  margin: 10px 280px;
+}
+.chara{
+  width: 100%;
+  height: 280px;
+  padding: 20px 0px 0px 0px;
+  margin-top: 25px;
+}
+.pic{
+  display: inline;
+  width: 180px;
+  float: left;
+}
+.chara_info{
+  width: 58%;
+  float: left;
+  display: inline;
+  padding: 0 30px;
+
+}
+.p_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+.pre_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+.story_map{
+  display: inline;
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: #000;
+}
+#about3{
+  display: inline;
+  width: 200px;
+  height:200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+#about4{
+  display: inline;
+  width: 200px;
+  height:300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+.story_e{
+  display: inline;
+  float: left;
+  height: 300px;
+  width: 200px;
+  background-color: #000;
+}
+.about_left_rule{
+  width: 100%;
+  display: inline-block;
+}
+
+
+/*work課表*/
+#work{
+  width: 100%;
+  height:600px;
+  background-color: #ffffff;
+}
+#work h1{
+  background-image: url(../img/header-10.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0px;
+  margin: 20px auto 20px;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #096277;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.work{
+  background-image: url(../img/work-1.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 70%;
+  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
+  background-position: center center;
+  margin: 10px 200px;
+}
+.work_content{
+  vertical-align: middle;
+  border-style: none;
+}
+.p_work{
+  width: 600px;
+  height: 200px;
+  color: #4992AC;
+  text-align: right;
+  margin-left: 160px;
+  font-size: 16px;
+}
+
+ /*map地圖*/
+ #map{
+  width: 60%;
+  padding: 0% 0% 10% 10%;
+  height:450px;
+  background-color: #000;
+  display: inline block;
+  float: left;
+}
+.d-block{
+  display: block !important;
+}
+.img_map{
+  vertical-align: middle;
+  border-style: none;
+}
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel .carousel-item img {
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+
+#about1{
+  width: 40%;
+  height: 450px;
+  background-color: #000;
+  display: inline-block;
+  float: left;
+}
+.story2{
+  background-image: url(../img/story.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 70%;
+  padding: 0px 30px;
+  background-position: center center;
+  margin: 3% 10%;
+}
+
+/*game遊戲*/
+#game{
+  width: 100%;
+  height:600px;
+  background-color: #ffffff;
+}
+#game h1{
+  background-image: url(../img/header-10.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0px;
+  margin: 50px auto 64px;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #096277;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.p_game{
+  background-image: url(../img/game-2.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  padding-left: 40px;
+  padding-bottom: 140px;
+  background-position: center center;
+  margin: 10px 200px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  left: 45px;
+  color: #4992AC;
+}
+
+.img_game{
+  float: left;
+  display: block;
+  border-style: none;
+}
+.game_content{
+  margin: 0 400px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*pic圖鑑*/
+#picture{
+  width: 100%;
+  height:640px;
+  background-color: #DAE9EC;
+}
+
+.picture_left{
+  width: 30%;
+}
+.p_pic{
+  background-image: url(../img/header-10.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px 0px;
+  margin: 50px auto 64px;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #096277;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/*footer*/
+.footer_content{
+  display: inline-block;
+  height: 120px;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  padding: 10px 0;
+}
+.p_footer{
+  text-align: center;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: rgb(201, 201, 201);
+}
+.text-center{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: rgb(201, 201, 201);
+}
+
+
+
+.content{
+  
+  background-color: #000;
+}
+.text{
+  color: #f10101;
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  font-size: 26px;
+}
+.text1{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  font-size: 18px;
+}
+.middle{
+  background-color: #000;
+}
+
+
+/*1024-------------------------------------------------------*/
+@media screen and (max-width:1024px){
+  .home_words{
+    width: 472px;
+    height: 290px;
+    left: calc(10% - 200px);
+    top: 225px;
+  }
+
+  #map{
+    height: 300px;
+  }
+
+  #work{
+    height: 470px;
+  }
+
+  #game{
+    height: 1100px;
+  }
+
+  #picture{
+    height: 1100px;
+  }
+
+  .about_left{
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .about_left img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about_right{
+    display: block;
+    width: 550px;
+    margin: 25px auto;
+  }
+  .infobox{
+    display: inline;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  
+  }
+ 
+#about_info{
+  width: 100%;
+  height:auto;
+  background-color: #000;
+}  
+#about_info_map{
+  width: 100%;
+  height:800px;
+  background-color: #000;
+}  
+.pic_info{
+  width: 100%;
+}
+.story_chara{
+  padding: 50px 0;
+  margin: 10px 80px;
+}
+.chara{
+  width: 100%;
+  height: 280px;
+  padding: 10px 0px 0px 0px;
+  margin-top: 25px;
+}
+.pic{
+  display: inline;
+  width: 180px;
+  float: left;
+}
+.chara_info{
+  width: 60%;
+  float: left;
+  display: inline;
+  padding: 0 30px;
+
+}
+.p_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+.pre_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+
+   /*-------------------*/
+   /*home首頁*/
+   #home{
+    width: 100%;
+    height: 36vw;
+    /* background-color: #000; */
+    background-image: url("../images/home5.png") ;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 6vw;
+    background-position-x: 45%;
+    box-shadow: 0 3px 5px #000;
+    background-color: rgb(20, 20, 20);
+  }
+  .home_words{ 
+    position: relative;
+    width: 472px;
+    height: 290px;
+    left: calc(30% - 400px);
+    top: 300px;
+  }
+  
+  
+  /*story前導*/
+  #about{
+    width: 100%;
+    height:auto;
+    background-color: #000;
+  }
+  .about_content{
+    margin: 0 calc(50% - 480px);
+  }
+  
+  .about_left{
+    display: inline-block;
+  }
+  
+  .about_left .info{
+    color: #000;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top:10px;
+    text-align: center;
+  }
+  
+  .about_right{
+    color: #000;
+    display: inline-block;
+    margin-left: 45px;
+    width: 685px;
+  }
+  .story{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 50px 3%;
+    background-position: center center;
+    margin: 10px 240px;
+  }
+  
+  .p_story{
+    color: #fff;
+    text-align: center;
+  }
+  .p_story_header{
+    color: #f10101;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    font-size: 26px;
+  }
+  .pre_story{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+    text-align:center
+  }
+  .story_info{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 50px 0;
+    background-position: center center;
+    margin: 10px 240px;
+  }
+  .infobox{
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 280px;
+  
+  }
+  
+  /*work課表*/
+  #work{
+    width: 100%;
+    height:600px;
+    background-color: #ffffff;
+  }
+  #work h1{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0px;
+    margin: 20px auto 20px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .work{
+    background-image: url(../img/work-1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    background-position: center center;
+    margin: 10px 200px;
+  }
+  .work_content{
+    vertical-align: middle;
+    border-style: none;
+  }
+  .p_work{
+    width: 600px;
+    height: 200px;
+    color: #4992AC;
+    text-align: right;
+    margin-left: 160px;
+    font-size: 16px;
+  }
+  
+   /*map地圖*/
+   #map{
+    width: 65%;
+    height:450px;
+    background-color: #000;
+    display: inline block;
+    float: left;
+  }
+  .w-50{
+    height: 100% !important;
+  }
+  .d-block{
+    display: block !important;
+  }
+  .img_map{
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  #about1{
+    width: 35%;
+    height: 450px;
+    background-color: #000;
+    display: inline-block;
+    float: left;
+  }
+  .story2{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 0px 30px;
+    background-position: center center;
+    margin: 3% 10%;
+  }
+  
+  /*game遊戲*/
+  #game{
+    width: 100%;
+    height:600px;
+    background-color: #ffffff;
+  }
+  #game h1{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0px;
+    margin: 50px auto 64px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .p_game{
+    background-image: url(../img/game-2.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    padding-left: 40px;
+    padding-bottom: 140px;
+    background-position: center center;
+    margin: 10px 200px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    left: 45px;
+    color: #4992AC;
+  }
+  
+  .img_game{
+    float: left;
+    display: block;
+    border-style: none;
+  }
+  .game_content{
+    margin: 0 400px;
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  /*pic圖鑑*/
+  #picture{
+    width: 100%;
+    height:640px;
+    background-color: #DAE9EC;
+  }
+  
+  .picture_left{
+    width: 30%;
+  }
+  .p_pic{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px 0px;
+    margin: 50px auto 64px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  /*footer*/
+  .footer_content{
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    padding: 10px 0;
+  }
+  .p_footer{
+    text-align: center;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+  }
+  .text-center{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+  }
+}  
+
+/*860----------------------------------------------------*/
+@media screen and (max-width:860px){
+
+  .menu{
+    display: none;
+  }
+
+  /*home*/
+  #home{
+    background-position-y: 40px;
+  }
+  .home_words{
+    width: 472px;
+    height: 290px;
+    left: calc(10% - 200px);
+    top: 150px;
+  }
+
+  #about{
+    height: 400px;
+  }
+
+  #map{
+    height: 450px;
+  }
+
+  #work{
+    height: 900px;
+  }
+
+  #game{
+    height: 900px;
+  }
+
+  #picture{
+    height: 900px;
+  }
+
+  .about_left img{
+    width: 150px;
+  }
+  .about_right{
+    display: block;
+    width: 400px;
+    margin: 25px auto;
+  }
+
+
+  /*--------------------*/
+  /*home首頁*/
+  #home{
+    width: 100%;
+    height: 43vw;
+    /* background-color: #000; */
+    background-image: url("../images/home5.png") ;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 11vw;
+    background-position-x: 45%;
+    box-shadow: 0 3px 5px #000;
+    background-color: rgb(20, 20, 20);
+  }
+  .home_words{ 
+    position: relative;
+    width: 472px;
+    height: 290px;
+    left: calc(30% - 400px);
+    top: 300px;
+  }
+  
+  
+  /*story前導*/
+  #about{
+    width: 100%;
+    height:auto;
+    background-color: #000;
+  }
+  .about_content{
+    margin: 0 calc(50% - 480px);
+  }
+  
+  .about_left{
+    display: inline-block;
+  }
+  
+  .about_left .info{
+    color: #000;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top:10px;
+    text-align: center;
+  }
+  
+  .about_right{
+    color: #000;
+    display: inline-block;
+    margin-left: 45px;
+    width: 685px;
+  }
+  .story{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 50px 0;
+    background-position: center center;
+    margin: 0px 17%;
+  }
+  
+  .p_story{
+    color: #fff;
+    text-align: center;
+  }
+  .p_story_header{
+    color: #f10101;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    font-size: 26px;
+  }
+  .pre_story{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+    text-align:center
+  }
+  .story_info{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 50px 0;
+    background-position: center center;
+    margin: 0px 17%;
+  }
+  .infobox{
+    display: inline;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+  
+  }
+
+   
+#about_info{
+  width: 100%;
+  height:200px;
+  text-align: center;
+}  
+#about_info_map{
+  width: 100%;
+  height:230px;
+  text-align: center;
+}  
+.pic_info{
+  width: 100%;
+}
+.story_chara{
+  padding: 50px 0;
+  margin: 10px 80px;
+}
+.chara{
+  width: 100%;
+  height: 280px;
+  padding: 10px 0px 0px 0px;
+  margin-top: 25px;
+}
+.pic{
+  display: inline;
+  width: 180px;
+  float: left;
+}
+.chara_info{
+  width: 100%;
+  float: left;
+  display: inline;
+  padding: 0 30px;
+
+}
+.p_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+.pre_story_chara{
+  font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-align:left;
+}
+.story_map{
+  display: inline;
+  float: left;
+  height: 200px;
+  width: 200px;
+  background-color: #000;
+}
+#about3{
+  display: inline;
+  width: 100%;
+  height:200px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  background-color: #000;
+  text-align: center;
+}
+
+  
+  /*work課表*/
+  #work{
+    width: 100%;
+    height:600px;
+    background-color: #ffffff;
+  }
+  #work h1{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0px;
+    margin: 20px auto 20px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .work{
+    background-image: url(../img/work-1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    background-position: center center;
+    margin: 10px 200px;
+  }
+  .work_content{
+    vertical-align: middle;
+    border-style: none;
+  }
+  .p_work{
+    width: 600px;
+    height: 200px;
+    color: #4992AC;
+    text-align: right;
+    margin-left: 160px;
+    font-size: 16px;
+  }
+  
+   /*map地圖*/
+   #map{
+    width: 100%;
+    height:450px;
+    background-color: #000;
+    display: inline block;
+    float: left;
+  }
+  .w-50{
+    height: 100% !important;
+  }
+  .d-block{
+    display: block !important;
+  }
+  .img_map{
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  #about1{
+    width: 100%;
+    height: 450px;
+    background-color: #000;
+    display: inline-block;
+    float: left;
+    text-align: center;
+  }
+  .story2{
+    background-image: url(../img/story.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 70%;
+    padding: 0px 30px;
+    background-position: center center;
+    margin: 3% 10%;
+  }
+  
+  /*game遊戲*/
+  #game{
+    width: 100%;
+    height:600px;
+    background-color: #ffffff;
+  }
+  #game h1{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0px;
+    margin: 50px auto 64px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .p_game{
+    background-image: url(../img/game-2.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    padding-left: 40px;
+    padding-bottom: 140px;
+    background-position: center center;
+    margin: 10px 200px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    left: 45px;
+    color: #4992AC;
+  }
+  
+  .img_game{
+    float: left;
+    display: block;
+    border-style: none;
+  }
+  .game_content{
+    margin: 0 400px;
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  /*pic圖鑑*/
+  #picture{
+    width: 100%;
+    height:640px;
+    background-color: #DAE9EC;
+  }
+  
+  .picture_left{
+    width: 30%;
+  }
+  .p_pic{
+    background-image: url(../img/header-10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px 0px;
+    margin: 50px auto 64px;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #096277;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  /*footer*/
+  .footer_content{
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    padding: 10px 0;
+  }
+  .p_footer{
+    text-align: center;
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+  }
+  .text-center{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+  }
+
+}
+
+
+
+/*480*/
+@media screen and (max-width:480px){
+  font-size: 6pt;
+
+  .home_words{
+    font-size: 6pt;
+    width: 472px;
+    height: 290px;
+    left: calc(10% - 350px);
+    top: 75px;
+  }
+
+  #about{
+    height: 900px;
+  }
+
+  #map{
+    height: 900px;
+  }
+
+  #work{
+    height: 900px;
+  }
+
+  #game{
+    height: 900px;
+  }
+
+  #picture{
+    height: 900px;
+  }
+
+  .about_right{
+    display: block;
+    width: 400px;
+    margin: 25px auto;
+  }
+  
+  #about_info{
+    width: 100%;
+    height:auto;
+  }  
+  .pic_info{
+    width: 100%;
+  }
+  .story_chara{
+    padding: 50px 0;
+    margin: 10px 80px;
+  }
+  .chara{
+    width: 100%;
+    height: 280px;
+    padding: 10px 0px 0px 0px;
+    margin-top: 25px;
+  }
+  .pic{
+    display: inline;
+    width: 180px;
+    float: left;
+  }
+  .chara_info{
+    width: 100%;
+    float: left;
+    display: inline;
+    padding: 0 30px;
+  
+  }
+  .p_story_chara{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+    text-align:left;
+  }
+  .pre_story_chara{
+    font-family: '微軟正黑體',Arial,BoldMT ,san-serif;
+    color: #fff;
+    text-align:left;
+  }
+
+  
+
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fatal Wish</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-storage.js"></script>
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/home2.png" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar_bg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a  class="nav-link" href="./main_page.html">首頁</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./madeit.html">製作團隊</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./character.html">角色</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./map.html">地圖</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./event.html">事件</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./item.html">物件</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./rule.html">規則</a></li>
+          <li class="nav-item"><a  class="nav-link" href="./messange.html">留言板</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <div id='home'>
+      <div>
+        <div class="home_words">
+            <img src="./images/none.png" alt="" class="LOGO_img">
+        </div>
+      </div>
+    </div><!-- home -->
+
+<!--前導-->
+    <div id="about">
+      <div class="about_left">
+        <div class="story">
+          <p class="p_story p_story_header" >〡故事</p>
+          <pre class="pre_story">
+    在網路上，流傳著一個詭異的都市傳說。傳說，只要召喚出“祈願雙子”，他們便會實現一個人的願望。
+
+    想要召喚“祈願雙子”，需要準備許多材料。在進行時需要準備布料、棉花、針和線。
+              
+    祈願雙子密不可分，召喚其一，必得召喚其二，如若強行將其分離，雙子必將大開殺戒，令召喚者入夢中獵殺以召喚其兄弟。
+              
+    停止獵殺、逃離夢境的唯一方法，只有在夢中集齊製作娃娃的材料，再召喚另一雙子，才能平息怒火。
+              
+    幾名學生發現了“血腥雙子”這個都市傳說，聽說雙子可以幫忙實現任何願望，而且不需要任何代價。
+              
+    相信了傳說的幾個學生就在放學後的教室裡準備著。正當做好一個娃娃時，發覺沒有出現任何異樣，便覺得這是個騙人的傳說。
+              
+    此時正好快要完全天黑，大家便決定各自回家休息......
+            </pre>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+
+<!--地圖-->
+    <div id="map">
+        <div class="container">
+            <div class="carousel slide" data-ride="carousel" id="carousel-demo">
+                 <ol class="carousel-indicators">
+                   <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+                   <li data-target="#carousel-demo" data-slide-to="1"></li>
+                   <li data-target="#carousel-demo" data-slide-to="2"></li>
+                 </ol>
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img class="d-block w-100" src="./images/c11.jpg" alt="">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="./images/c9.jpg" alt="">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="./images/map23.jpg" alt="">
+                 </div>
+               
+                 <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+                 </a>
+                 <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+                 </a>
+               </div>
+             </div>
+         </div>
+    </div><!--map -->
+
+  </div><!--about_content-->
+  <div id="about1">
+      <div class="about_left">
+        <div class="story2">
+          <p class="p_story p_story_header" >〡遊戲名</p>
+          <p class="p_story"> 死x願 Fatal Wish</p>
+          <p class="p_story p_story_header" >〡類型</p>
+          <p class="p_story">懸疑、鬼怪、破解、搜索</p>
+          <p class="p_story p_story_header" >〡語言</p>
+          <p class="p_story">全繁中語系</p>
+          <p class="p_story p_story_header" >〡遊玩時間</p>
+          <p class="p_story">3~4人約30分鐘到一個小時</p>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+<!--頁尾-->
+<footer class="about">
+  <div class="footer_content">
+    <div class="p_footer">
+      <pre class="text-center">© copyright 死X願 Fatal Wish</pre>
+    </div>
+    <div class="p_footer">
+      <a href="https://www.facebook.com/profile.php?id=100009483294724">
+        <img src="./images/facebook.png" style="width:50px;">
+      </a>
+      <a href="https://line.me/R/ti/p/%40tyc3458n">
+        <img src="./images/line.png" style="width:50px;">
+      </a>
+      <a href="https://www.instagram.com/kinlong9452/?hl=zh-tw">
+        <img src="./images/instagram.png" style="width:50px;">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

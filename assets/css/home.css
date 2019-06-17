@@ -1,0 +1,140 @@
+.whole{
+    
+    margin:0;
+    padding:0;
+    
+}
+
+.homephoto{
+    opacity: 0.9;
+    margin-bottom:20px;
+}
+.title-h {
+    font-family:Microsoft JhengHei;
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    text-align: justify;
+    color: #000;
+    
+  
+}
+.title-p{
+    font-family:Microsoft JhengHei;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom:30px;
+    padding-bottom:30px;
+}
+
+.services li{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.service i{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(37, 85, 122);
+    color: white;
+    margin:0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+}
+@media (min-width:320px){
+   
+    .content{
+        
+        margin-top:80px;
+    }
+    .homephoto {
+        margin-top:60px;
+    }
+    .services ul{
+        margin:0 40px 0 40px;
+        padding:10px;
+    }
+    .service li p{
+        text-align: center;
+    }
+    .title-h{
+        margin:10px;
+        font-size: 1.9em;        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .title-p{
+        margin: 20px;
+        font-size: .7em;
+        
+    }
+    
+}
+@media (min-width:375px){
+
+    .services ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin:0 5px 0 5px;
+        padding:20px;
+    }
+}
+
+@media (min-width:768px){
+    .services ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin:0 100px 0 100px;
+        padding:20px;
+    }
+    .title-h {
+        font-family:Microsoft JhengHei;
+        margin-top:20px;
+    }    
+}
+@media  (min-width:992px)
+{
+    .title-h {
+        font-family:Microsoft JhengHei;
+        margin-top:20px;
+        font-size: 4rem;
+        text-align: justify;
+        line-height: 2;
+        letter-spacing: 0.14em; 
+      
+    }
+    .title-p{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    
+    .services ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        margin:0 300px 0 300px;
+        padding:20px;
+    }
+
+
+
+}
+
+
