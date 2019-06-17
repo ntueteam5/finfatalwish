@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fatal Wish</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-storage.js"></script>
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/home2.png" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar_bg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a  class="nav-link" href="./main_page.html">首頁</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./madeit.html">製作團隊</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./character.html">角色</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./map.html">地圖</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./event.html">事件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./item.html">物件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./rule.html">規則</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./messange.html">留言板</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <div id='home'>
+      <div>
+        <div class="home_words">
+            <img src="./images/none.png" alt="" class="LOGO_img">
+        </div>
+      </div>
+    </div><!-- home -->
+
+<!--前導-->
+    <div id="about">
+      <div class="about_left">
+        <div class="story">
+          <p class="p_story p_story_header" >〡遊戲目標</p>
+          <pre class="pre_story">
+遊戲以探險和搜索為主題，玩家則扮演學校中的一群學生。
+
+玩家可以選擇許多不同的身份，6名學生在睡夢中來到了他們熟悉卻又感覺陌生的校園中，疑惑且漫無目的地尋找線索，找出逃離夢境的方法。
+
+學校雖然有大門，但卻打不開，只能到校園內尋找離開的方法。
+
+隨著深入校園探索，他們離甦醒便更近一步。</pre>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+<!--前導-->
+<div id="about">
+    <div class="about_left_rule">
+      <div class="story">
+        <p class="p_story p_story_header" >〡遊戲時間</p>
+        <pre class="pre_story">30分鐘~1小時
+
+        </pre>
+        <p class="p_story p_story_header" >〡遊戲人數</p>
+        <pre class="pre_story">3~6人(最多6人)</pre>
+      </div><!--story-->      
+    </div><!--about_left-->  
+  </div><!-- about -->
+
+
+
+<!--前導-->
+<div id="about">
+    <div class="about_left_rule">
+      <div class="story">
+        <p class="p_story p_story_header" >〡遊戲配件</p>
+        <pre class="pre_story">
+遊戲規則               Rule Book×1
+
+地圖卡                  Room Card×48
+(主校舍×16,科任校舍×15,宿舍×17)
+
+主校舍大廳           Main Building Card×1
+
+科任校舍大廳       Subject Building Card×1
+
+宿舍大廳               Dormitory Building Card×1
+
+角色卡                  Character Card×20
+
+角色標記               Character Mark×20
+
+娃娃角色卡           Doll  Character Card×1
+
+娃娃標記               Doll Mark×1
+
+物件卡                  Item Card×40
+
+事件卡                  Event Card×44
+
+記錄卡                  Record Card×6
+
+體力標記              Energy Mark×6
+            </pre>
+      </div><!--story-->      
+    </div><!--about_left-->  
+  </div><!-- about -->
+
+<!--前導-->
+    <div id="about">
+      <div class="about_left_rule">
+        <div class="story">
+          <p class="p_story p_story_header" >〡開局準備</p>
+          <pre class="pre_story">
+將主校舍大廳、科任校舍大廳、宿舍大廳放到桌子的中間，三張卡片之間預留大一點的空間。
+
+將事件卡、物件卡和地圖卡各自洗牌後，放置在一旁。
+
+選擇一個角色後(不可選擇娃娃)，每位玩家將會拿到自己選擇的角色卡×1、相對應的角色標記×1、體力標記×1和紀錄卡×1。
+
+其他角色卡和角色標記放回盒中，這些不會再用到。
+
+拿出紀錄卡，對應角色卡上的體力值，將體力標記放置在相對應的數值上。
+
+將角色標記放置在主校舍大廳的卡片上，角色人頭朝上(翻至背面代表死亡)。
+
+查看角色卡上的座號，由數字最小者開始遊戲。
+              </pre>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+<!--前導-->
+    <div id="about">
+      <div class="about_left_rule">
+        <div class="story">
+          <p class="p_story p_story_header" >〡玩法說明</p>
+          <pre class="pre_story">
+遊戲以回合進行。由起始玩家開始，各玩家分別進行其遊戲回合。
+              
+玩家決定其回合結束後，以順時或逆時方向繼續遊戲。
+
+遊戲以校園探索為主，玩家在拼湊出校園時，會搜集不同的物件卡來強化人物和取得破關物件。</pre>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+    <!--前導-->
+    <div id="about">
+        <div class="about_left_rule">
+          <div class="story">
+            <p class="p_story p_story_header" >〡玩家行動</p>
+            <pre class="pre_story">
+玩家進行其遊戲回合時，玩家可按任何次序執行下列活動。其中移動、探索、搜索、棄牌、交換手牌、使用能力、使用道具等活動，皆可夾雜進行。
+
+玩家可只執行部份活動，或完全不作任何活動，因此玩家必須公告其回合是否完結。
+
+
+
+ 1. 移動
+
+ 玩家可移動自己的角色標記。每進入一間房間或者經過一間房間，角色即耗用1點體力。一回合中，某角色進入或經過的房間數量，不可超過該角色當下最高體力值。
+                
+並且若是移動中因為事件被扣除體力值，當回合最高移動步數等同扣除後數值。
+
+在遊戲中，地圖卡所觸發的事件卡和物件卡中，會有補或扣體力值。
+                
+
+如若扣體力值，則將記錄卡上的體力標記放置扣除體力值後對應的數值上，補體力值亦然(補體力值最高只能到達角色的原最高體力值)。
+                
+
+體力值歸0時，代表死亡，將角色標記翻至背面代表死亡。
+
+(普通學生有3次昏厥能力，即自死亡的回合算起，3回合後，若沒有其他玩家將其體力值恢復，則真正死亡。)
+                
+
+*當某一玩家體力值歸0時，若其他玩家手中有補體力值的物件卡，可直接使用物件卡幫助死亡的玩家恢復1點體力值(不必待在同一間教室)。
+
+但只能救一次。死亡玩家若第二次歸0，則真正死亡。
+                
+
+*普通同學在昏厥狀態下，其他玩家不可直接使用物件卡治療，而是必須與其待在同一間房間，才可進行治療。
+                
+
+
+2. 探索(放置地圖卡)
+
+當角色離開身處的房間，進入未知的空間(桌面)時，玩家需先查看地圖卡堆最頂端的那塊。
+                
+若該地圖卡的校舍和角色身處的校舍相符，則玩家可翻開該房間，並將這房間放到角色身處的未知空間。
+                
+若牌堆最頂端的房間，其校舍和人物身處的校舍並不相符，則將其放置一旁，由上至下，直到找到對應的校舍，再作擺放。
+                
+放置新房間時玩家可隨意決定房間的方向，但新房間必須有一扇門與角色剛離開的房間接合。
+
+
+
+3.搜索(抽出事件卡或物件卡)
+
+新房間擺放後，因應房間是否印有事件(骷髏)、物件(剪刀)標記。
+                
+如果卡上出現事件(骷髏)，玩家需抽相對應數量的事件卡。在翻開事件卡後，依照指示加減體力值、完成卡片上的要求和可依據牌上的指示行使該事件的效果。
+                
+如若還有體力值，則可繼續開地圖卡。
+                
+*翻開後的事件卡，在失去效力後(未標示則回合結束失去效力)，放到棄牌堆中。
+                
+有出現物件(剪刀)，則直接抽取相對應數量的物件卡。
+                
+如若在回合中，手牌加抽出的物件卡數量超過儲存值，必須丟棄超過儲存值數量的物件卡至棄牌堆。
+                
+宣告回合結束後，手中擁有的物件卡數量，不可超過該角色的最高儲存值。
+                
+玩家可依據牌上的指示，行使該物件的效用或者棄牌。效用行使後，放至棄牌堆。
+                
+
+
+4. 棄牌(將物件卡放入棄牌堆)
+
+在自己的回合進行時，可隨時丟棄手牌中的物件卡，而一回合中不限棄牌數。                 
+*棄牌不消耗體力值。
+                
+棄牌堆需與物件卡堆分開，以免搞混。
+                
+玩家在結束回合時，需檢查手牌量是否超過儲存值。若是超過，需使用或棄牌直到符合儲存值。
+  
+
+
+5.交換手牌
+
+在自己的回合中，玩家可主動將手中物件卡(沒有去黏著劑的口香糖除外)，在雙方同意下，與同一房間的其他角色交換他們的卡片。
+*交換手牌不消耗體力值。
+
+
+
+6.使用物件
+
+在自己的回合中，可使用手中的物件卡上的能力且不限張數。
+                
+*使用物件不消耗體力。
+            
+
+
+7.使用角色能力
+
+在自己的回合中，可使用角色本身具有的能力，根據角色卡上的說明使用。
+                
+*使用角色能力不消耗體力值。
+             
+
+
+8.攻擊娃娃
+
+在自己的回合中，若是移動到和娃娃同一個房間，就可以使用手牌中可攻擊娃娃的物件。
+                
+*每使用一個物件，需耗用1點體力值。
+                </pre>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->
+
+      <!--前導-->
+    <div id="about">
+        <div class="about_left_rule">
+          <div class="story">
+            <p class="p_story p_story_header" >〡背叛者</p>
+            <pre class="pre_story">
+                抽中事件卡「腳步聲」的玩家，至盒中拿取惡靈娃娃的角色卡和娃娃標記。
+
+                將場中角色標記換成娃娃標記，體力值調至8，四人以上(不含四人)則調至8+(P-4)，且該角色在先前所擁有的物件卡全部放入棄牌堆中。
+                
+                娃娃必須阻止其他好人玩家達成勝利條件或者將其他好人殺掉來達成自己的勝利條件。
+                
+                娃娃進行其遊戲回合時，只可利用體力值追逐其他玩家，並且攻擊他們。當娃娃移動後，與某玩家待在同一房間時，便可以攻擊對方。
+                
+                攻擊的數值為娃娃移動後，所剩之體力值來區分。
+                
+                體力值剩下6~8時，好人角色體力值-3；體力值3~5時，，好人角色體力值-2；體力值3以下(不含3)，，好人角色體力值-1。
+                
+                娃娃進行攻擊後，便結束回合。
+                
+                *事件卡中，具有扣娃娃體力值的卡片。娃娃體力值被扣除後，經歷一回合，則可恢復1點體力值，至原最高上限。</pre>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->
+
+      <!--前導-->
+    <div id="about">
+        <div class="about_left_rule">
+          <div class="story">
+            <p class="p_story p_story_header" >〡勝利條件</p>
+            <pre class="pre_story">
+                玩家須收集針×1，線×1，布×1，棉花×P，4人以上時(包含4人)需再找鈕扣×(P-3)。
+                收集完所有物品，須集體回到主校舍大廳集合(死亡者待在原地)。
+                *P為玩家人數。</pre>
+              <p class="p_story p_story_header" >〡失敗條件</p>
+            <pre class="pre_story">
+                所有玩家均死亡(普通同學亦不是昏厥狀態或者已無人能替他回覆體力)或者無法達成勝利條件。</pre>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->
+
+      <!--前導-->
+    <div id="about">
+        <div class="about_left_rule">
+          <div class="story">
+            <p class="p_story p_story_header" >〡終局</p>
+            <pre class="pre_story">
+                完成勝利條件或失敗條件，遊戲即時結束。</pre>
+              <p class="p_story p_story_header" >〡勝負</p>
+            <pre class="pre_story">
+                依據勝利條件，完成且活到最後的玩家獲得勝利。而失敗條件則是娃娃獲得勝利，好人玩家失敗。</pre>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->
+<!--頁尾-->
+<footer class="about">
+    <div class="footer_content">
+      <div class="p_footer">
+        <pre class="text-center">© copyright 死X願 Fatal Wish</pre>
+      </div>
+      <div class="p_footer">
+        <a href="https://www.facebook.com/profile.php?id=100009483294724">
+          <img src="./images/facebook.png" style="width:50px;">
+        </a>
+        <a href="https://line.me/R/ti/p/%40tyc3458n">
+          <img src="./images/line.png" style="width:50px;">
+        </a>
+        <a href="https://www.instagram.com/kinlong9452/?hl=zh-tw">
+          <img src="./images/instagram.png" style="width:50px;">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

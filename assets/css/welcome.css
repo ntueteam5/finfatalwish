@@ -1,0 +1,53 @@
+html{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+ /* font-size: 24pt;*/
+  background-image: url(../img/home.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+*{
+  box-sizing: inherit;
+}
+
+main{
+  margin: 10vw auto 0;
+  font-size: 1rem;
+  font-family: Arial,BoldMT ,san-serif;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(95, 95, 95);
+  text-align: center;
+  line-height: 1rem;
+}
+
+.LOGO_btn{
+  width:auto;
+  height:auto;
+  margin-left: 25%;
+}
+
+.LOGO_img{
+  width: 50%;
+}
+
+@media screen and (max-width:680px){
+/*  html{
+    font-size: 16pt;
+  }*/
+
+  .LOGO_img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .LOGO_img{
+    width: 100%;
+  }
+}
+
+
+

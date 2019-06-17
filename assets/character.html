@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fatal Wish</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="./js/highlight.pack.js"></script>
+    <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>
+      <script type="text/javascript" src="./js/examples.js"></script>
+      <script type="text/javascript" src="./js/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-storage.js"></script>
+  <link rel="Shortcut Icon" type="image/x-icon" href="./images/home2.png" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar_bg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a  class="nav-link" href="./main_page.html">首頁</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./madeit.html">製作團隊</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./character.html">角色</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./map.html">地圖</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./event.html">事件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./item.html">物件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./rule.html">規則</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./messange.html">留言板</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <div id='home'>
+      <div>
+        <div class="home_words">
+            <img src="./images/none.png" alt="" class="LOGO_img">
+        </div>
+      </div>
+    </div><!-- home -->
+    
+    
+    <div id="about_info">
+        <div class="about_left">
+          <div class="story_chara">
+            <p class="p_story p_story_header" >〡卡片介紹</p>
+            <div class="chara">
+              <div class="pic_info">
+                <img src="./images/c_info.jpg" width="100%" alt="">
+              </div>
+                </pre>              
+              </div>
+            </div>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->    
+
+
+<!--圖片-->
+    <div id="about">
+      <div class="about_left">
+        <div class="story_chara">
+          <p class="p_story p_story_header" >〡角色資訊</p>
+          <div class="chara">
+            <div class="pic">
+              <img src="./images/chara/班長.png" width="180px" alt="">
+            </div>
+            <div class="chara_info">
+              <p class="p_story_chara">〡班長 No.24</p>
+              <pre class="pre_story_chara">
+體力7 儲存7
+
+熱心助人。
+
+與其他同學待在同一間教室時，體力+P。
+
+*備註：P為待在同一間教室的人數(不包含自己)，離開後體力恢復原值。
+              </pre>              
+            </div>
+          </div>
+          <div class="chara">
+            <div class="pic">
+              <img src="./images/chara/風紀.png" width="180px" alt="">
+            </div>
+            <div class="chara_info">
+              <p class="p_story_chara">〡風紀股長  No.7</p>
+              <pre class="pre_story_chara">
+體力8 儲存5
+
+公平公正。
+
+可將任2位玩家(包含自己)的體力或儲存值(任一)平均分配給其2位玩家。
+
+*備註：分配的總值為雙方值的加總，若總值為奇數，則+1成偶數再平分。(總務的儲存值不可跟其他玩家平分)
+              </pre>              
+            </div>
+          </div>
+          <div class="chara">
+            <div class="pic">
+              <img src="./images/chara/總務.png" width="180px" alt="">
+            </div>
+            <div class="chara_info">
+              <p class="p_story_chara">〡總務股長  No.3</p>
+              <pre class="pre_story_chara">
+體力5 儲存∞
+  
+保管仔細。
+  
+在手牌數為5以上時，體力-(手牌數-5)，直到體力為3為止。
+              </pre>              
+            </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/學藝.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡學藝股長  No.15</p>
+                <pre class="pre_story_chara">
+體力5 儲存8
+    
+萬能巧手。
+    
+可從手牌中犧牲2張物件卡，再從牌堆中抽出新的物件卡。
+
+*備註：犧牲2張手牌到棄牌堆後再抽卡。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/衛生.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡衛生股長  No.16</p>
+                <pre class="pre_story_chara">
+體力5 儲存7
+    
+細心照料。
+    
+與其他玩家待在同一間教室可幫助其他玩家體力+1。
+
+*備註：一回合只能治療1個人，治療後，兩人皆暫停一回合。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/體育.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡康樂股長  No.5</p>
+                <pre class="pre_story_chara">
+體力10 儲存3
+    
+體力超群。
+    
+可抵擋攻擊3次。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/模範.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡模範生  No.30</p>
+                <pre class="pre_story_chara">
+體力7 儲存6
+    
+完美頭腦。
+    
+在科任教室裡體力+1。
+
+*備註：離開後，體力恢復原值。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/邊緣.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡邊緣人  No.39                  </p>
+                <pre class="pre_story_chara">
+體力5 儲存5
+    
+超級邊緣。
+    
+可以給別人手牌，但別人不能給他牌。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/校草.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡校草  No.14</p>
+                <pre class="pre_story_chara">
+體力7 儲存4
+    
+女生愛我。
+    
+與女性角色待在同一間教室時，可從對方手牌中抽走1張卡。
+
+*備註：口香糖可被抽走。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/中二.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡中二仔  No.35</p>
+                <pre class="pre_story_chara">
+體力5 儲存5
+    
+左眼好痛。
+    
+可犧牲1張手牌，抵擋1次攻擊。
+
+*備註：犧牲1張手牌到棄牌堆中。
+                </pre>              
+              </div>
+          </div>
+          <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/不良.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡不良仔  No.40</p>
+                <pre class="pre_story_chara">
+體力9 儲存4
+    
+義氣凜然。
+    
+觸發事件時，可幫待在同一間教室的任一位玩家扛下所有傷害。
+                </pre>              
+              </div>
+          </div>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+    
+    <div id="about">
+        <div class="about_left">
+          <div class="story_chara">
+            <p class="p_story p_story_header" >〡娃娃資訊</p>
+            <div class="chara">
+              <div class="pic">
+                <img src="./images/chara/玩偶-女.png" width="180px" alt="">
+              </div>
+              <div class="chara_info">
+                <p class="p_story_chara">〡娃娃 No.???</p>
+                <pre class="pre_story_chara">
+  體力8  (四人以上(不含四人)則調至8+(P-4)，且將所擁有的物件卡全部放入棄牌堆中。)*P為玩家人數。
+  
+  當娃娃移動結束後，與某玩家待在同一房間時，便可以攻擊對方，攻擊後回合結束。
+  
+  攻擊的數值為娃娃移動後，所剩之體力值來區分。
+  
+  體力值剩下6~8時，攻擊值為3；體力值3~5時，攻擊值為2；體力值3以下(不含3)，攻擊值為1。
+  
+  熱心助人。
+  
+  與其他同學待在同一間教室時，體力+P。
+  
+  *備註：P為待在同一間教室的人數(不包含自己)，離開後體力恢復原值。
+                </pre>              
+              </div>
+            </div>
+          </div><!--story-->      
+        </div><!--about_left-->  
+      </div><!-- about -->    
+    
+    
+
+ 
+
+
+<!--頁尾-->
+<footer class="about">
+    <div class="footer_content">
+      <div class="p_footer">
+        <pre class="text-center">© copyright 死X願 Fatal Wish</pre>
+      </div>
+      <div class="p_footer">
+        <a href="https://www.facebook.com/profile.php?id=100009483294724">
+          <img src="./images/facebook.png" style="width:50px;">
+        </a>
+        <a href="https://line.me/R/ti/p/%40tyc3458n">
+          <img src="./images/line.png" style="width:50px;">
+        </a>
+        <a href="https://www.instagram.com/kinlong9452/?hl=zh-tw">
+          <img src="./images/instagram.png" style="width:50px;">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

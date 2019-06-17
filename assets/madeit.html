@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fatal Wish</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-storage.js"></script>
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/home2.png" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar_bg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a  class="nav-link" href="./main_page.html">首頁</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./madeit.html">製作團隊</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./character.html">角色</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./map.html">地圖</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./event.html">事件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./item.html">物件</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./rule.html">規則</a></li>
+            <li class="nav-item"><a  class="nav-link" href="./messange.html">留言板</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <div id='home'>
+      <div>
+        <div class="home_words">
+            <img src="./images/none.png" alt="" class="LOGO_img">
+        </div>
+      </div>
+    </div><!-- home -->
+
+<!--企劃-->
+    <div id="about">
+      <div class="about_left">
+        <div class="story_info">
+          <p class="p_story p_story_header" >〡企劃</p>
+          <div class="infobox">
+            <p class="p_story">〡劉泱彤</p>
+            <pre class="pre_story">
+擁有TRPG帶團經驗，知道怎樣的遊戲能讓人注意。
+
+理解遊戲的運作，懂得調節角色的強弱，讓遊戲不會過難。
+            </pre>          
+          </div>
+          <div class="infobox">
+            <p class="p_story">〡楊宜庭</p>
+            <pre class="pre_story">
+參與過TRPG遊戲，玩過多款桌遊，了解桌遊的組成元素。
+
+理解地圖和配件的配置，提出各種形成桌遊的需求物件。
+            </pre>
+          </div>
+          <div class="infobox">
+            <p class="p_story">〡高銘懋</p>
+            <pre class="pre_story">
+參與多個角C團和原創企劃，對於碩造世界觀十分拿手。
+
+角色和發展性的想像力十分充足，提出多種點子參考。
+            </pre>          
+          </div>
+          <div class="infobox">
+            <p class="p_story">〡蕭以聆</p>
+            <pre class="pre_story">
+了解人性，明白怎樣的語詞能讓人理解，並且具說服力。
+
+負責整理點子呵需求元素形成字句，讓思路更清晰。
+            </pre>          
+          </div>
+        </div><!--story-->      
+      </div><!--about_left-->  
+    </div><!-- about -->
+
+<!--美術-->
+<div id="about">
+    <div class="about_left">
+      <div class="story_info">
+        <p class="p_story p_story_header" >〡美術</p>
+        <div class="infobox">
+          <p class="p_story">〡劉泱彤</p>
+          <pre class="pre_story">
+負責人物的描圖和著色，使用黑白上色，看起來沒有那麼活潑。
+
+負責地圖卡陰影的調整，稿件完稿前的意見提出，讓作品更加完整。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡楊宜庭</p>
+          <pre class="pre_story">
+負責地圖的草稿描繪、線搞、著色、陰影。
+          
+畫成平面俯視圖的模樣，讓人身歷其境。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡高銘懋</p>
+          <pre class="pre_story">
+負責人物初稿的描繪，選擇美式畫風，讓作品顯得詭譎灰暗。
+
+設定各種角色配合其代號，不可重複外觀，還需要思考角色人設。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡蕭以聆</p>
+          <pre class="pre_story">
+負責全部卡面和卡背的繪製，還有整理規則成說明書。
+
+包裝盒以及色彩的調整，形成最後作品。
+          </pre>          
+        </div>
+      </div><!--story-->      
+    </div><!--about_left-->  
+  </div><!-- about -->
+
+<!--故事內容-->
+<div id="about">
+    <div class="about_left">
+      <div class="story_info">
+        <p class="p_story p_story_header" >〡故事</p>
+        <div class="infobox">
+          <p class="p_story">〡劉泱彤</p>
+          <pre class="pre_story">
+挑出故事不合理或是不合適之處，讓負責人進行修改。
+
+整體故事的連接和改進，挑出應修改的部分。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡楊宜庭</p>
+          <pre class="pre_story">
+負責提供點子讓福澤人採納，使故事延伸更廣闊。
+
+挑出應修改的部分讓負責人修正。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡高銘懋</p>
+          <pre class="pre_story">
+負責大世界觀構思，故事大綱，前傳以及後續內容的敘寫。
+
+角色人設及在作品中的地位，事件卡上的文章書寫。
+          </pre>          
+        </div>
+        <div class="infobox">
+          <p class="p_story">〡蕭以聆</p>
+          <pre class="pre_story">
+提供加深故事的想法，幫忙調整角色和角色的關係。
+
+故事大綱和前傳的整理，修改成易讀的版本。
+          </pre>          
+        </div>
+      </div><!--story-->      
+    </div><!--about_left-->  
+  </div><!-- about -->
+
+<!--頁尾-->
+<footer class="about">
+    <div class="footer_content">
+      <div class="p_footer">
+        <pre class="text-center">© copyright 死X願 Fatal Wish</pre>
+      </div>
+      <div class="p_footer">
+        <a href="https://www.facebook.com/profile.php?id=100009483294724">
+          <img src="./images/facebook.png" style="width:50px;">
+        </a>
+        <a href="https://line.me/R/ti/p/%40tyc3458n">
+          <img src="./images/line.png" style="width:50px;">
+        </a>
+        <a href="https://www.instagram.com/kinlong9452/?hl=zh-tw">
+          <img src="./images/instagram.png" style="width:50px;">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
