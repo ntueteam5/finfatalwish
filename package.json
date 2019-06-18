@@ -4,10 +4,12 @@
   "description": "midworkfinal",
   "main": "webpack.config.js",
   "scripts": {
+    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch  --mode development",
     "start": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,13 @@
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
-    "url-loader": "^2.0.0"
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
+    "rimraf": "^2.6.3",
+    "url-loader": "^2.0.0",
+    "webpack-dev-server": "^3.7.2"
   }
 }
