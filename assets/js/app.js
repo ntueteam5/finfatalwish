@@ -136,12 +136,7 @@ import '../js/examples.js';
 import '../js/highlight.pack.js';
 import '../js/main.js';
 
-import '../css/contact.css';
-import '../css/home.css';
-import '../css/main.css';
-import '../css/normalize.css';
-import '../css/welcome.css';
-
+import '../css/all.css';
 
 $('#image__one').attr("src", one);
 $('#image__two').attr("src", two);
