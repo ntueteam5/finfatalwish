@@ -1,9 +1,9 @@
 let path = require('path');
 
-let htmlPages = ['index','character','event','item','madeit','main_page','map','messange','rule'];
-
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+let htmlPages = ['index','character','event','item','madeit','main_page','map','messange','rule'];
 
 let htmlPlugins = htmlPages.map(page =>
     new HtmlWebpackPlugin({
