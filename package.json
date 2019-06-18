@@ -7,14 +7,15 @@
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch  --mode development",
-    "start": "webpack --mode development",
-    "build": "webpack --mode production",
+    "start": "npm run clean && webpack --mode development",
+    "build": "npm run clean && webpack --mode production",
     "server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
@@ -28,6 +29,7 @@
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
+    "json-server": "^0.15.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.1",
@@ -35,6 +37,7 @@
     "postcss-simple-vars": "^5.0.2",
     "rimraf": "^2.6.3",
     "url-loader": "^2.0.0",
+    "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.2"
   }
 }
