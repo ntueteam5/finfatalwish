@@ -1,6 +1,51 @@
 let path = require('path');
+
+let htmlPages = ['index','course'];
+
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+let htmlPlugins = htmlPages.map(page =>
+    new HtmlWebpackPlugin({
+        filename: `${character}.html`,
+        template: `assets/${character}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${event}.html`,
+        template: `assets/${event}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${item}.html`,
+        template: `assets/${item}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${madeit}.html`,
+        template: `assets/${madeit}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${main_page}.html`,
+        template: `assets/${main_page}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${map}.html`,
+        template: `assets/${map}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${messange}.html`,
+        template: `assets/${messange}.html`,
+        favicon:'assets/images/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+        filename: `${rule}.html`,
+        template: `assets/${rule}.html`,
+        favicon:'assets/images/favicon.ico'
+    })
+);
 
 module.exports = {
     entry:'./assets/js/app.js',
@@ -61,8 +106,6 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('./css/style.[hash].css'),
-        new HtmlWebpackPlugin({
-            template: "assets/index.html"
-        })
+        ...htmlPlugins
     ]
 }
