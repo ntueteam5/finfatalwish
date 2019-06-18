@@ -9,7 +9,6 @@ let htmlPlugins = htmlPages.map(page =>
     new HtmlWebpackPlugin({
         filename: `${page}.html`,
         template: `assets/${page}.html`,
-        favicon:'assets/images/favicon.ico'
     }),
 );
 
