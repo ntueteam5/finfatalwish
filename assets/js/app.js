@@ -132,48 +132,15 @@ import 總務 from '../images/總務.png';
 import 邊緣 from '../images/邊緣.png';
 import 體育 from '../images/體育.png';
 
-import '../js/animation.velocity.js';
-import '../js/bootstrap.bundle.js';
-import '../js/bootstrap.bundle.js.map';
-import '../js/bootstrap.bundle.min.js';
-import '../js/bootstrap.bundle.min.js.map';
-import '../js/bootstrap.js';
-import '../js/bootstrap.js.map';
-import '../js/bootstrap.min.js';
-import '../js/bootstrap.min.js.map';
 import '../js/examples.js';
 import '../js/highlight.pack.js';
-import '../js/jquery-3.2.1.min.js';
-import '../js/jquery-3.3.1.min.js';
 import '../js/main.js';
 
-import '../css/bootstrap.css';
-import '../css/bootstrap.css.map';
-import '../css/bootstrap.min.css';
-import '../css/bootstrap.min.css.map';
 import '../css/contact.css';
 import '../css/home.css';
 import '../css/main.css';
 import '../css/normalize.css';
-import '../css/normalizetwo.css';
 import '../css/welcome.css';
-
-import "../css/fonts/PT-Sans-Bold.eot";
-import "../css/fonts/PT-Sans-Bold.svg";
-import "../css/fonts/PT-Sans-Bold.ttf";
-import "../css/fonts/PT-Sans-Bold.woff";
-import "../css/fonts/PT-Sans-BoldItalic.eot";
-import "../css/fonts/PT-Sans-BoldItalic.svg";
-import "../css/fonts/PT-Sans-BoldItalic.ttf";
-import "../css/fonts/PT-Sans-BoldItalic.woff";
-import "../css/fonts/PT-Sans-Italic.eot";
-import "../css/fonts/PT-Sans-Italic.svg";
-import "../css/fonts/PT-Sans-Italic.ttf";
-import "../css/fonts/PT-Sans-Italic.woff";
-import "../css/fonts/PT-Sans.eot";
-import "../css/fonts/PT-Sans.svg";
-import "../css/fonts/PT-Sans.ttf";
-import "../css/fonts/PT-Sans.woff";
 
 
 $('#image__one').attr("src", one);
